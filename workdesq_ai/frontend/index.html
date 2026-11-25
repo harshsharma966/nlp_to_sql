@@ -1,0 +1,1393 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Phishing Email Checker – AI Scam Detection Tool | PhishShield</title>
+<meta name="description" content="Paste any email or upload a file to instantly check if it's phishing or safe using AI. Free phishing detection tool with real-time threat analysis.">
+<meta name="keywords" content="phishing email checker, phishing detection tool, scam email checker, check if email is phishing, fake email detector, email threat scanner">
+<meta name="robots" content="index, follow">
+<link rel="canonical" content="https://phishing.systoolsgroup.com/">
+<meta name="author" content="SysTools">
+<meta name="copyright" content="SysTools Software Pvt. Ltd.">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://phishing.systoolsgroup.com/">
+<meta property="og:title" content="Free Phishing Email Checker – AI Scam Detection Tool">
+<meta property="og:description" content="Instantly detect phishing emails before you click. Upload any email and get an AI-powered risk score with clear explanations.">
+<meta property="og:image" content="https://phishing.systoolsgroup.com/og-image.jpg">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://phishing.systoolsgroup.com/">
+<meta property="twitter:title" content="Free Phishing Email Checker – AI Scam Detection Tool">
+<meta property="twitter:description" content="Instantly detect phishing emails before you click. Upload any email and get an AI-powered risk score with clear explanations.">
+<meta property="twitter:image" content="https://phishing.systoolsgroup.com/og-image.jpg">
+
+<!-- Google Fonts - Inter & Roboto -->
+<link rel="icon" href="https://phishing.systoolsgroup.com/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+<!-- Lucide Icons CDN -->
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<!-- Structured Data (Schema.org JSON-LD) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "PhishShield - Free Phishing Email Checker",
+  "applicationCategory": "SecurityApplication",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "description": "Free AI-powered phishing email detection tool. Upload email files to instantly check if they're phishing or safe with real-time threat analysis.",
+  "url": "https://phishing.systoolsgroup.com/",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.7",
+    "ratingCount": "2847"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "SysTools Software Pvt. Ltd."
+  }
+}
+</script>
+
+<!-- FAQ Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is phishing email detection?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Phishing email detection is the process of identifying fraudulent emails that attempt to steal sensitive information like passwords, credit card numbers, or personal data. Our AI-powered tool analyzes email headers, content, URLs, and sender authentication to detect phishing attempts before you click on dangerous links."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How accurate is this phishing email checker?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our AI-powered phishing detection tool uses advanced machine learning algorithms and analyzes multiple threat indicators including SPF/DKIM/DMARC authentication, URL reputation, domain age, content patterns, and suspicious language. While no tool is 100% accurate, our multi-layered approach provides reliable phishing detection to help protect you from email scams."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is my email data safe when I upload it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, your privacy is our top priority. All emails are transmitted via HTTPS encryption, analyzed in real-time, and immediately deleted after processing. We do not store, log, or share your email content."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What file formats are supported?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our phishing detector currently supports .eml (standard email format) files. You can export .eml files from most email clients including Gmail, Outlook, Yahoo Mail, and Apple Mail."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is this tool free to use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, our basic phishing email checker is completely free to use with no registration required. Simply upload your email file and get instant results."
+      }
+    }
+  ]
+}
+</script>
+
+<style>
+/* Professional fonts - Inter + Roboto */
+body {
+    font-family: 'Inter', 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Headings use Inter for a modern, professional look */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', 'Roboto', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+/* Body text uses Roboto for excellent readability */
+p, span, div {
+    font-family: 'Roboto', 'Inter', sans-serif;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Robot Animation Keyframes */
+@keyframes bounce-slow {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+@keyframes blink {
+    0%, 90%, 100% {
+        transform: scaleY(1);
+    }
+    95% {
+        transform: scaleY(0.1);
+    }
+}
+
+@keyframes scan-light {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(500%);
+    }
+}
+
+@keyframes scan-vertical {
+    0% {
+        top: 5%;
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        top: 95%;
+        opacity: 0;
+    }
+}
+
+@keyframes shine {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.animate-bounce-slow {
+    animation: bounce-slow 2.5s ease-in-out infinite;
+}
+
+.animate-blink {
+    animation: blink 4s ease-in-out infinite;
+}
+
+.animate-scan-light {
+    animation: scan-light 1.8s ease-in-out infinite;
+}
+
+.animate-scan-vertical {
+    animation: scan-vertical 2.5s ease-in-out infinite;
+}
+
+.animate-shine {
+    animation: shine 3s ease-in-out infinite;
+}
+
+/* Glassmorphism Effect */
+.glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.glass-white {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Custom Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes pulse-glow {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 40px rgba(59, 130, 246, 0.8);
+    }
+}
+
+.animate-fadeInUp {
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-fadeIn {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.animate-scaleIn {
+    animation: scaleIn 0.5s ease-out forwards;
+}
+
+.animate-float {
+    animation: float 3s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Scroll Animation Observer - Optimized */
+.scroll-animate {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+    will-change: opacity, transform;
+}
+
+.scroll-animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+    will-change: auto;
+}
+
+/* Animated Grid Lines Background (Vertical + Horizontal) */
+@keyframes grid-flow {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+.grid-lines-animate {
+    width: 100%;
+    height: 100%;
+    background-image:
+        repeating-linear-gradient(
+            90deg,
+            transparent,
+            transparent 48px,
+            rgba(59, 130, 246, 0.25) 48px,
+            rgba(59, 130, 246, 0.25) 49px
+        ),
+        repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent 48px,
+            rgba(99, 102, 241, 0.25) 48px,
+            rgba(99, 102, 241, 0.25) 49px
+        );
+    background-size: 200% 200%;
+    animation: grid-flow 25s linear infinite;
+}
+
+/* Hover Effects */
+.hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Gradient Text - FIXED TO BLUE/INDIGO ONLY */
+.gradient-text {
+    background: linear-gradient(135deg, #2563EB 0%, #4F46E5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* File Upload Dropzone */
+.dropzone {
+    border: 2px dashed #93C5FD;
+    transition: all 0.3s ease;
+}
+
+.dropzone:hover {
+    border-color: #3B82F6;
+    background-color: #EFF6FF;
+}
+
+.dropzone.dragover {
+    border-color: #2563EB;
+    background-color: #DBEAFE;
+    transform: scale(1.02);
+}
+
+/* FAQ Accordion */
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out, opacity 0.4s ease-out, padding 0.4s ease-out;
+    opacity: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.faq-answer.active {
+    max-height: 500px;
+    opacity: 1;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.faq-icon {
+    transition: transform 0.3s ease;
+}
+
+.faq-icon.rotate-90 {
+    transform: rotate(90deg);
+}
+
+/* Hidden */
+.hidden {
+    display: none;
+}
+</style>
+</head>
+
+<body class="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50">
+
+<!-- Loading Modal with Robot Animation -->
+<div id="loadingModal" class="hidden fixed inset-0 bg-gradient-to-br from-black/70 via-blue-900/20 to-black/70 backdrop-blur-md flex items-center justify-center z-50">
+  <div class="w-full max-w-lg mx-4 shadow-2xl border-2 border-blue-200 bg-gradient-to-br from-white to-blue-50/30 overflow-hidden rounded-lg">
+    <div class="p-8">
+      <div class="flex flex-col items-center gap-6">
+        <!-- Animated Robot Scanning Email -->
+        <div class="relative w-64 h-52">
+          <!-- Particle Effects -->
+          <div class="absolute inset-0">
+            <div class="absolute top-10 left-10 w-2 h-2 bg-blue-400 rounded-full animate-ping opacity-75"></div>
+            <div class="absolute top-20 right-12 w-1.5 h-1.5 bg-blue-300 rounded-full animate-ping opacity-60" style="animation-delay: 0.5s"></div>
+            <div class="absolute bottom-20 left-16 w-1 h-1 bg-blue-500 rounded-full animate-ping opacity-50" style="animation-delay: 1s"></div>
+          </div>
+
+          <!-- Robot Container -->
+          <div class="absolute inset-0 flex items-center justify-center">
+            <!-- Robot Head -->
+            <div class="relative">
+              <!-- Head Body with Glow -->
+              <div class="w-28 h-28 bg-gradient-to-br from-blue-500 via-blue-600 to-blue-700 rounded-2xl shadow-2xl relative animate-bounce-slow">
+                <!-- Glow Effect -->
+                <div class="absolute inset-0 bg-blue-400 rounded-2xl blur-xl opacity-30 animate-pulse"></div>
+
+                <!-- Antenna -->
+                <div class="absolute -top-8 left-1/2 transform -translate-x-1/2 w-1.5 h-8 bg-gradient-to-t from-blue-600 to-blue-400">
+                  <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-gradient-to-br from-blue-300 to-blue-500 rounded-full animate-pulse shadow-lg shadow-blue-400">
+                    <div class="absolute inset-0.5 bg-white/50 rounded-full animate-ping"></div>
+                  </div>
+                </div>
+
+                <!-- Eyes with Glow -->
+                <div class="flex gap-5 justify-center pt-7 relative z-10">
+                  <div class="w-5 h-5 bg-white rounded-full relative overflow-hidden shadow-inner">
+                    <div class="absolute inset-0 bg-blue-600 rounded-full animate-blink"></div>
+                    <div class="absolute inset-0 bg-blue-400/50 rounded-full blur-sm"></div>
+                  </div>
+                  <div class="w-5 h-5 bg-white rounded-full relative overflow-hidden shadow-inner">
+                    <div class="absolute inset-0 bg-blue-600 rounded-full animate-blink" style="animation-delay: 0.1s"></div>
+                    <div class="absolute inset-0 bg-blue-400/50 rounded-full blur-sm"></div>
+                  </div>
+                </div>
+
+                <!-- Scanning Light Bar -->
+                <div class="absolute bottom-5 left-1/2 transform -translate-x-1/2 w-20 h-1.5 bg-blue-200/50 rounded-full overflow-hidden shadow-inner relative z-10">
+                  <div class="h-full w-5 bg-gradient-to-r from-blue-400 via-blue-500 to-blue-400 animate-scan-light shadow-lg shadow-blue-400"></div>
+                </div>
+
+                <!-- Side Details -->
+                <div class="absolute top-2 right-2 w-2 h-2 bg-blue-300 rounded-full animate-pulse"></div>
+                <div class="absolute top-2 left-2 w-2 h-2 bg-blue-300 rounded-full animate-pulse" style="animation-delay: 0.5s"></div>
+              </div>
+
+              <!-- Enhanced Scanning Rays -->
+              <div class="absolute top-24 left-1/2 transform -translate-x-1/2">
+                <div class="w-0 h-0 border-l-[35px] border-l-transparent border-r-[35px] border-r-transparent border-t-[45px] border-t-blue-400/40 animate-pulse"></div>
+                <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-[25px] border-l-transparent border-r-[25px] border-r-transparent border-t-[35px] border-t-blue-300/50 animate-pulse" style="animation-delay: 0.3s"></div>
+              </div>
+            </div>
+
+            <!-- Email Document Being Scanned -->
+            <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2">
+              <div class="w-36 h-44 bg-gradient-to-br from-white to-gray-50 rounded-lg shadow-2xl border-2 border-blue-200 p-3 animate-float relative">
+                <!-- Document Shine Effect -->
+                <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent animate-shine"></div>
+
+                <!-- Email Icon -->
+                <div class="absolute -top-2 -right-2 bg-blue-600 rounded-full p-1.5 shadow-lg">
+                  <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                  </svg>
+                </div>
+                <div class="w-full h-2 bg-gradient-to-r from-blue-200 to-blue-100 rounded mb-2 animate-pulse"></div>
+                <div class="w-3/4 h-2 bg-gray-200 rounded mb-2"></div>
+                <div class="w-full h-2 bg-gray-200 rounded mb-2"></div>
+                <div class="w-5/6 h-2 bg-gray-200 rounded mb-4"></div>
+
+                <!-- Scanning Line -->
+                <div class="absolute left-0 right-0 h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent animate-scan-vertical shadow-lg shadow-blue-400" style="top: 20%">
+                  <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-50"></div>
+                </div>
+                <div class="w-2/3 h-2 bg-gray-200 rounded mb-2"></div>
+                <div class="w-full h-2 bg-gray-200 rounded mb-2"></div>
+                <div class="w-4/5 h-2 bg-gray-200 rounded"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Progress Info -->
+        <div class="text-center w-full">
+          <h3 class="text-2xl font-bold text-gray-900 mb-2">Analyzing Email Security</h3>
+          <p class="text-gray-700 text-sm mb-4">Our AI is scanning for phishing threats, malware, and suspicious patterns...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Header Placeholder -->
+<div id="header-placeholder"></div>
+
+<!-- Hidden file input -->
+<input type="file" id="fileInput" accept=".eml" class="hidden">
+
+<!-- Hero Section - Modern with Glassmorphism -->
+<section class="relative overflow-hidden min-h-screen flex items-center">
+  <!-- Animated Background -->
+  <div class="absolute inset-0 overflow-hidden">
+    <div class="absolute top-0 left-0 w-96 h-96 bg-blue-400 rounded-full blur-3xl opacity-20 animate-float"></div>
+    <div class="absolute top-1/4 right-0 w-96 h-96 bg-indigo-400 rounded-full blur-3xl opacity-20 animate-float" style="animation-delay: 1s;"></div>
+    <div class="absolute bottom-0 left-1/3 w-96 h-96 bg-blue-300 rounded-full blur-3xl opacity-15 animate-float" style="animation-delay: 2s;"></div>
+  </div>
+
+  <div class="relative max-w-7xl mx-auto px-4 md:px-6 py-20">
+    <div class="max-w-4xl mx-auto text-center">
+
+      <!-- Trust Badge with Animation -->
+      <div class="inline-flex items-center mb-8 glass-white px-6 py-3 text-sm font-black text-blue-700 rounded-full shadow-lg hover:shadow-xl transition-all animate-fadeIn">
+        <i data-lucide="shield-check" class="h-5 w-5 mr-2"></i>
+        Free AI-Powered Phishing Detection
+      </div>
+
+      <!-- Main Headline - BOLD & EMPHASIZED -->
+      <h1 class="text-3xl md:text-4xl lg:text-5xl font-black mb-6 leading-tight animate-fadeInUp">
+        <span class="text-gray-900">
+          Enterprise
+        </span>
+        <span class="gradient-text font-black relative">
+          Email Security
+          <span class="absolute -inset-1 bg-gradient-to-r from-blue-400/10 to-indigo-400/10 blur-lg -z-10"></span>
+        </span>
+        <br>
+        <span class="gradient-text font-black">
+          Advanced Protection for Businesses
+        </span>
+      </h1>
+
+      <!-- Subheadline - SMALLER FONT SIZE -->
+      <p class="text-base md:text-lg lg:text-xl text-gray-700 mb-12 max-w-3xl mx-auto leading-relaxed animate-fadeInUp" style="animation-delay: 0.2s;">
+        Protect your email account from malware, spam, ransomware, and phishing with AI-powered detection technology. Identify cyber-attacks with a proven <span class="text-blue-600 font-bold">99.8% accuracy rate</span>. Upload your .eml file for instant analysis.
+      </p>
+
+      <!-- Error Message -->
+      <div id="errorMessage" class="hidden mb-6 p-4 bg-red-50 border-2 border-red-200 rounded-2xl text-red-700 font-semibold shadow-lg"></div>
+
+      <!-- Interactive Upload Dropzone -->
+      <div class="max-w-2xl mx-auto mb-12 animate-scaleIn" style="animation-delay: 0.4s;">
+        <div id="dropzone" class="dropzone glass-white rounded-3xl p-12 cursor-pointer hover-lift">
+          <div class="text-center">
+            <div class="inline-flex p-6 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 text-white mb-6 shadow-xl animate-pulse-glow">
+              <i data-lucide="upload-cloud" class="h-12 w-12"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-3">Drop your .eml file here</h3>
+            <p class="text-gray-600 mb-6">or click to browse</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trust Indicators -->
+      <div class="flex flex-wrap justify-center gap-8 text-sm animate-fadeIn" style="animation-delay: 0.6s;">
+        <div class="flex items-center gap-2">
+          <i data-lucide="check-circle-2" class="h-5 w-5 text-blue-600"></i>
+          <span class="font-semibold text-gray-700">Free Trial Available</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <i data-lucide="zap" class="h-5 w-5 text-blue-600"></i>
+          <span class="font-semibold text-gray-700">Instant Analysis</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <i data-lucide="building-2" class="h-5 w-5 text-blue-600"></i>
+          <span class="font-semibold text-gray-700">Enterprise Grade</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Stats Section -->
+<section class="relative py-16 bg-gradient-to-br from-slate-50 to-blue-50 overflow-hidden">
+  <!-- Animated Grid Lines Background (Vertical + Horizontal) -->
+  <div class="absolute inset-0 opacity-50 pointer-events-none">
+    <div class="absolute inset-0 grid-lines-animate"></div>
+  </div>
+
+  <div class="relative max-w-7xl mx-auto px-6">
+
+    <!-- Section Header -->
+    <div class="text-center mb-12 scroll-animate">
+      <div class="inline-flex items-center mb-4 glass-white px-6 py-3 text-sm font-semibold text-blue-700 rounded-full shadow-lg">
+        <i data-lucide="shield-check" class="h-5 w-5 mr-2"></i>
+        Trusted Worldwide
+      </div>
+      <h2 class="text-4xl lg:text-5xl font-black text-gray-900 mb-4">
+        Enterprise-Grade Protection
+        <span class="block gradient-text mt-2">Built for Scale</span>
+      </h2>
+    </div>
+
+    <!-- Stats Grid with Advanced Design - MOBILE OPTIMIZED -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
+
+      <!-- Stat 1 - Active Users -->
+      <div class="relative group scroll-animate">
+        <div class="glass-white rounded-2xl md:rounded-3xl p-6 md:p-8 border border-blue-100 hover:border-blue-300 hover:shadow-xl transition-all hover:scale-105">
+          <!-- Icon -->
+          <div class="inline-flex mb-4 md:mb-6">
+            <div class="p-3 md:p-4 rounded-xl md:rounded-2xl bg-gradient-to-br from-blue-500 to-indigo-600">
+              <i data-lucide="users" class="h-6 w-6 md:h-8 md:w-8 text-white"></i>
+            </div>
+          </div>
+
+          <!-- Static Number -->
+          <div class="mb-2">
+            <div class="text-3xl md:text-4xl lg:text-5xl font-black gradient-text">15,847+</div>
+          </div>
+          <div class="text-gray-700 font-bold text-xs md:text-sm uppercase tracking-wide mb-3 md:mb-4">Active Users</div>
+
+          <!-- Mini Progress Bar -->
+          <div class="h-1.5 bg-gray-200 rounded-full overflow-hidden">
+            <div class="h-full bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full" style="width: 75%"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stat 2 - Emails Analyzed -->
+      <div class="relative group scroll-animate" style="animation-delay: 0.1s;">
+        <div class="glass-white rounded-2xl md:rounded-3xl p-6 md:p-8 border border-blue-100 hover:border-blue-300 hover:shadow-xl transition-all hover:scale-105">
+          <!-- Icon -->
+          <div class="inline-flex mb-4 md:mb-6">
+            <div class="p-3 md:p-4 rounded-xl md:rounded-2xl bg-gradient-to-br from-blue-500 to-indigo-600">
+              <i data-lucide="mail" class="h-6 w-6 md:h-8 md:w-8 text-white"></i>
+            </div>
+          </div>
+
+          <!-- Static Number -->
+          <div class="mb-2">
+            <div class="text-3xl md:text-4xl lg:text-5xl font-black gradient-text">2.3M+</div>
+          </div>
+          <div class="text-gray-700 font-bold text-xs md:text-sm uppercase tracking-wide mb-3 md:mb-4">Emails Analyzed</div>
+
+          <!-- Mini Progress Bar -->
+          <div class="h-1.5 bg-gray-200 rounded-full overflow-hidden">
+            <div class="h-full bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full" style="width: 92%"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stat 3 - Threats Blocked -->
+      <div class="relative group scroll-animate" style="animation-delay: 0.2s;">
+        <div class="glass-white rounded-2xl md:rounded-3xl p-6 md:p-8 border border-blue-100 hover:border-blue-300 hover:shadow-xl transition-all hover:scale-105">
+          <!-- Icon -->
+          <div class="inline-flex mb-4 md:mb-6">
+            <div class="p-3 md:p-4 rounded-xl md:rounded-2xl bg-gradient-to-br from-blue-500 to-indigo-600">
+              <i data-lucide="shield-check" class="h-6 w-6 md:h-8 md:w-8 text-white"></i>
+            </div>
+          </div>
+
+          <!-- Static Number -->
+          <div class="mb-2">
+            <div class="text-3xl md:text-4xl lg:text-5xl font-black gradient-text">98,754+</div>
+          </div>
+          <div class="text-gray-700 font-bold text-xs md:text-sm uppercase tracking-wide mb-3 md:mb-4">Threats Blocked</div>
+
+          <!-- Mini Progress Bar -->
+          <div class="h-1.5 bg-gray-200 rounded-full overflow-hidden">
+            <div class="h-full bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full" style="width: 88%"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- Features Section - COMPLETE BENTO GRID -->
+<section class="relative py-12 md:py-20 lg:py-24 bg-gradient-to-br from-slate-50 to-blue-50">
+  <div class="max-w-7xl mx-auto px-4 md:px-6">
+
+    <div class="text-center mb-10 md:mb-16 scroll-animate">
+      <div class="inline-flex items-center mb-4 md:mb-6 glass-white px-4 md:px-6 py-2 md:py-3 text-xs md:text-sm font-semibold text-blue-700 rounded-full shadow-lg">
+        <i data-lucide="sparkles" class="h-4 w-4 md:h-5 md:w-5 mr-2"></i>
+        Enterprise Grade Features
+      </div>
+      <h2 class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black text-gray-900 mb-4 md:mb-6 px-4">
+        Industry-Leading Email Protection
+      </h2>
+      <p class="text-base md:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto px-4">
+        Advanced machine learning and real-time threat analysis to keep your business safe
+      </p>
+    </div>
+
+    <!-- COMPLETE Bento Grid Layout - MOBILE OPTIMIZED -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+
+      <!-- Large Feature Card 1 - Spans 2 columns -->
+      <div class="lg:col-span-2 glass-white rounded-2xl md:rounded-3xl p-6 md:p-10 hover-lift scroll-animate">
+        <div class="flex flex-col md:flex-row items-start gap-4 md:gap-6">
+          <div class="flex-shrink-0">
+            <div class="inline-flex p-4 md:p-5 rounded-xl md:rounded-2xl bg-gradient-to-br from-blue-600 to-indigo-600 text-white shadow-xl">
+              <i data-lucide="brain" class="h-6 w-6 md:h-8 md:w-8"></i>
+            </div>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-xl md:text-2xl lg:text-3xl font-black text-gray-900 mb-3 md:mb-4">AI-Powered Detection</h3>
+            <p class="text-base md:text-lg text-gray-600 leading-relaxed mb-3 md:mb-4">
+              Advanced machine learning algorithms analyze email headers, content patterns, URL reputation, and sender authentication to identify sophisticated phishing attempts with 99.8% accuracy.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-2 md:px-3 py-1 bg-blue-100 text-blue-700 text-xs md:text-sm font-semibold rounded-full">Machine Learning</span>
+              <span class="px-2 md:px-3 py-1 bg-indigo-100 text-indigo-700 text-xs md:text-sm font-semibold rounded-full">Pattern Recognition</span>
+              <span class="px-2 md:px-3 py-1 bg-blue-100 text-blue-700 text-xs md:text-sm font-semibold rounded-full">Real-time</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature Card 2 -->
+      <div class="glass-white rounded-2xl md:rounded-3xl p-6 md:p-10 hover-lift scroll-animate" style="animation-delay: 0.1s;">
+        <div class="inline-flex p-4 md:p-5 rounded-xl md:rounded-2xl bg-gradient-to-br from-indigo-600 to-blue-600 text-white mb-4 md:mb-6 shadow-xl">
+          <i data-lucide="globe" class="h-6 w-6 md:h-8 md:w-8"></i>
+        </div>
+        <h3 class="text-lg md:text-xl lg:text-2xl font-black text-gray-900 mb-3 md:mb-4">URL Analysis</h3>
+        <p class="text-sm md:text-base text-gray-600 leading-relaxed">
+          Comprehensive URL reputation checking, domain age verification, and SSL certificate validation to detect malicious links.
+        </p>
+      </div>
+
+      <!-- Feature Card 3 -->
+      <div class="glass-white rounded-2xl md:rounded-3xl p-6 md:p-10 hover-lift scroll-animate" style="animation-delay: 0.2s;">
+        <div class="inline-flex p-4 md:p-5 rounded-xl md:rounded-2xl bg-gradient-to-br from-blue-600 to-indigo-600 text-white mb-4 md:mb-6 shadow-xl">
+          <i data-lucide="shield-check" class="h-6 w-6 md:h-8 md:w-8"></i>
+        </div>
+        <h3 class="text-lg md:text-xl lg:text-2xl font-black text-gray-900 mb-3 md:mb-4">SPF/DKIM/DMARC</h3>
+        <p class="text-sm md:text-base text-gray-600 leading-relaxed">
+          Validates email authentication protocols to verify sender legitimacy and detect domain spoofing attempts.
+        </p>
+      </div>
+
+      <!-- Large Feature Card 4 - Spans 2 columns - MOBILE OPTIMIZED -->
+      <div class="lg:col-span-2 glass-white rounded-2xl md:rounded-3xl p-6 md:p-10 hover-lift scroll-animate" style="animation-delay: 0.3s;">
+        <div class="flex flex-col md:flex-row items-start gap-4 md:gap-6">
+          <div class="flex-shrink-0">
+            <div class="inline-flex p-4 md:p-5 rounded-xl md:rounded-2xl bg-gradient-to-br from-indigo-600 to-blue-600 text-white shadow-xl">
+              <i data-lucide="zap" class="h-6 w-6 md:h-8 md:w-8"></i>
+            </div>
+          </div>
+          <div class="flex-1 w-full">
+            <h3 class="text-xl md:text-2xl lg:text-3xl font-black text-gray-900 mb-3 md:mb-4">Real-Time Threat Intelligence</h3>
+            <p class="text-base md:text-lg text-gray-600 leading-relaxed mb-4">
+              Continuously updated threat database with millions of known phishing signatures, malicious domains, and attack patterns from global security feeds.
+            </p>
+            <div class="grid grid-cols-3 gap-3 md:gap-4 mt-4">
+              <div class="text-center">
+                <div class="text-xl md:text-2xl lg:text-3xl font-bold text-blue-600">10M+</div>
+                <div class="text-xs md:text-sm text-gray-600 mt-1">Threat Signatures</div>
+              </div>
+              <div class="text-center">
+                <div class="text-xl md:text-2xl lg:text-3xl font-bold text-indigo-600">24/7</div>
+                <div class="text-xs md:text-sm text-gray-600 mt-1">Monitoring</div>
+              </div>
+              <div class="text-center">
+                <div class="text-xl md:text-2xl lg:text-3xl font-bold text-blue-600">&lt;1s</div>
+                <div class="text-xs md:text-sm text-gray-600 mt-1">Analysis Time</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature Card 5 -->
+      <div class="glass-white rounded-2xl md:rounded-3xl p-6 md:p-10 hover-lift scroll-animate" style="animation-delay: 0.4s;">
+        <div class="inline-flex p-4 md:p-5 rounded-xl md:rounded-2xl bg-gradient-to-br from-blue-600 to-indigo-600 text-white mb-4 md:mb-6 shadow-xl">
+          <i data-lucide="file-text" class="h-6 w-6 md:h-8 md:w-8"></i>
+        </div>
+        <h3 class="text-lg md:text-xl lg:text-2xl font-black text-gray-900 mb-3 md:mb-4">Detailed Reports</h3>
+        <p class="text-sm md:text-base text-gray-600 leading-relaxed">
+          Comprehensive analysis reports with risk scores, threat indicators, and actionable recommendations.
+        </p>
+      </div>
+
+      <!-- Feature Card 6 -->
+      <div class="glass-white rounded-2xl md:rounded-3xl p-6 md:p-10 hover-lift scroll-animate" style="animation-delay: 0.5s;">
+        <div class="inline-flex p-4 md:p-5 rounded-xl md:rounded-2xl bg-gradient-to-br from-indigo-600 to-blue-600 text-white mb-4 md:mb-6 shadow-xl">
+          <i data-lucide="lock" class="h-6 w-6 md:h-8 md:w-8"></i>
+        </div>
+        <h3 class="text-lg md:text-xl lg:text-2xl font-black text-gray-900 mb-3 md:mb-4">Privacy First</h3>
+        <p class="text-sm md:text-base text-gray-600 leading-relaxed">
+          All emails encrypted, analyzed in real-time, and immediately deleted. Zero data retention policy.
+        </p>
+      </div>
+
+      <!-- Feature Card 7 -->
+      <div class="glass-white rounded-2xl md:rounded-3xl p-6 md:p-10 hover-lift scroll-animate" style="animation-delay: 0.6s;">
+        <div class="inline-flex p-4 md:p-5 rounded-xl md:rounded-2xl bg-gradient-to-br from-blue-600 to-indigo-600 text-white mb-4 md:mb-6 shadow-xl">
+          <i data-lucide="bar-chart-3" class="h-6 w-6 md:h-8 md:w-8"></i>
+        </div>
+        <h3 class="text-lg md:text-xl lg:text-2xl font-black text-gray-900 mb-3 md:mb-4">Content Analysis</h3>
+        <p class="text-sm md:text-base text-gray-600 leading-relaxed">
+          Natural language processing detects urgency tactics, impersonation attempts, and social engineering.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- How It Works - IMPROVED DESIGN -->
+<section class="relative py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="text-center mb-16 scroll-animate">
+      <div class="inline-flex items-center mb-6 glass-white px-6 py-3 text-sm font-semibold text-blue-700 rounded-full shadow-lg">
+        <i data-lucide="list-checks" class="h-5 w-5 mr-2"></i>
+        Simple 3-Step Process
+      </div>
+      <h2 class="text-4xl lg:text-5xl font-black text-gray-900 mb-6">
+        How It Works
+      </h2>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        Detect phishing emails in seconds with our AI-powered analysis
+      </p>
+    </div>
+
+    <div class="relative max-w-6xl mx-auto">
+      <!-- Connection Line (Desktop) -->
+      <div class="hidden lg:block absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-blue-200 via-indigo-300 to-blue-200 -translate-y-1/2 z-0"></div>
+
+      <!-- Steps Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 relative z-10">
+
+        <!-- Step 1 -->
+        <div class="relative scroll-animate">
+          <div class="glass-white rounded-3xl p-10 hover-lift h-full text-center">
+            <!-- Step Number Circle -->
+            <div class="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-blue-600 to-indigo-600 text-white text-3xl font-bold rounded-full shadow-xl mb-6">
+              1
+            </div>
+            <!-- Icon -->
+          
+            <h3 class="text-2xl font-black text-gray-900 mb-4">Upload Your Email</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Export your suspicious email as a <span class="font-bold text-blue-600">.eml file</span> and upload it to our secure platform.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="relative scroll-animate" style="animation-delay: 0.2s;">
+          <div class="glass-white rounded-3xl p-10 hover-lift h-full text-center">
+            <!-- Step Number Circle -->
+            <div class="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-indigo-600 to-blue-600 text-white text-3xl font-bold rounded-full shadow-xl mb-6">
+              2
+            </div>
+            <!-- Icon -->
+        
+            <h3 class="text-2xl font-black text-gray-900 mb-4">AI Analysis</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Our AI engine analyzes <span class="font-bold text-indigo-600">headers, URLs, content patterns</span>, and sender authentication in real-time.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="relative scroll-animate" style="animation-delay: 0.4s;">
+          <div class="glass-white rounded-3xl p-10 hover-lift h-full text-center">
+            <!-- Step Number Circle -->
+            <div class="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-blue-600 to-indigo-600 text-white text-3xl font-bold rounded-full shadow-xl mb-6">
+              3
+            </div>
+            <!-- Icon -->
+           
+            <h3 class="text-2xl font-black text-gray-900 mb-4">Get Results</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Receive a detailed <span class="font-bold text-blue-600">risk score</span> with threat indicators and actionable recommendations.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Use Cases - Modern Cards -->
+<section class="relative py-24 bg-gradient-to-br from-slate-50 to-blue-50">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="text-center mb-16 scroll-animate">
+      <div class="inline-flex items-center mb-6 glass-white px-6 py-3 text-sm font-semibold text-blue-700 rounded-full shadow-lg">
+        <i data-lucide="target" class="h-5 w-5 mr-2"></i>
+        Use Cases
+      </div>
+      <h2 class="text-4xl lg:text-5xl font-black text-gray-900 mb-6">
+        Protect Every Team in Your Organization
+      </h2>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        From HR to finance, our phishing detection tool keeps your entire business secure
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+      <!-- Use Case 1 -->
+      <div class="glass-white rounded-3xl p-8 hover-lift scroll-animate">
+        <div class="inline-flex p-5 rounded-2xl bg-gradient-to-br from-blue-500 to-indigo-600 text-white mb-6 shadow-xl">
+          <i data-lucide="briefcase" class="h-8 w-8"></i>
+        </div>
+        <h3 class="text-xl font-black text-gray-900 mb-3">HR Teams</h3>
+        <p class="text-gray-600 leading-relaxed">
+          Protect recruitment processes from fake job applications, fraudulent resumes, and social engineering attacks.
+        </p>
+      </div>
+
+      <!-- Use Case 2 -->
+      <div class="glass-white rounded-3xl p-8 hover-lift scroll-animate" style="animation-delay: 0.1s;">
+        <div class="inline-flex p-5 rounded-2xl bg-gradient-to-br from-indigo-500 to-blue-600 text-white mb-6 shadow-xl">
+          <i data-lucide="credit-card" class="h-8 w-8"></i>
+        </div>
+        <h3 class="text-xl font-black text-gray-900 mb-3">Finance Teams</h3>
+        <p class="text-gray-600 leading-relaxed">
+          Stop invoice fraud, wire transfer scams, and CEO impersonation attacks before they cost millions.
+        </p>
+      </div>
+
+      <!-- Use Case 3 -->
+      <div class="glass-white rounded-3xl p-8 hover-lift scroll-animate" style="animation-delay: 0.2s;">
+        <div class="inline-flex p-5 rounded-2xl bg-gradient-to-br from-blue-500 to-indigo-600 text-white mb-6 shadow-xl">
+          <i data-lucide="shield" class="h-8 w-8"></i>
+        </div>
+        <h3 class="text-xl font-black text-gray-900 mb-3">IT Security</h3>
+        <p class="text-gray-600 leading-relaxed">
+          Enhance security stacks with real-time phishing detection and empower teams with threat intelligence.
+        </p>
+      </div>
+
+      <!-- Use Case 4 -->
+      <div class="glass-white rounded-3xl p-8 hover-lift scroll-animate" style="animation-delay: 0.3s;">
+        <div class="inline-flex p-5 rounded-2xl bg-gradient-to-br from-indigo-500 to-blue-600 text-white mb-6 shadow-xl">
+          <i data-lucide="user" class="h-8 w-8"></i>
+        </div>
+        <h3 class="text-xl font-black text-gray-900 mb-3">Individuals</h3>
+        <p class="text-gray-600 leading-relaxed">
+          Protect personal accounts from identity theft, credential stealing, and financial fraud with free scanning.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Trust / Compliance Section - WITH CAROUSEL -->
+<section class="relative py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="text-center mb-16 scroll-animate">
+      <div class="inline-flex items-center mb-6 glass-white px-6 py-3 text-sm font-semibold text-blue-700 rounded-full shadow-lg">
+        <i data-lucide="award" class="h-5 w-5 mr-2"></i>
+        Industry Trust & Recognition
+      </div>
+      <h2 class="text-4xl lg:text-5xl font-black text-gray-900 mb-6">
+        Built for Enterprise Security Standards
+      </h2>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        Compliance-ready platform trusted by Fortune 500 companies and government organizations
+      </p>
+    </div>
+
+    <!-- Compliance Carousel -->
+    <div id="carouselWrapper" class="relative max-w-3xl mx-auto group">
+      <!-- Carousel Container -->
+      <div class="overflow-hidden rounded-3xl">
+        <div id="trustCarousel" class="flex transition-transform duration-500 ease-in-out">
+
+          <!-- Badge 1: SOC 2 -->
+          <div class="flex-none w-full px-6">
+            <div class="bg-white/30 hover:bg-white/80 backdrop-blur-sm rounded-3xl p-8 text-center transition-all duration-500 border border-white/20 hover:border-blue-200 hover:shadow-2xl">
+              <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-2xl shadow-lg mb-4">
+                <i data-lucide="shield-check" class="h-8 w-8 text-white"></i>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-3">SOC 2 Certified</h3>
+              <p class="text-base text-gray-700 leading-relaxed max-w-xl mx-auto">
+                Independently audited and certified for security, availability, processing integrity, confidentiality, and privacy controls.
+              </p>
+            </div>
+          </div>
+
+          <!-- Badge 2: ISO 27001 -->
+          <div class="flex-none w-full px-6">
+            <div class="bg-white/30 hover:bg-white/80 backdrop-blur-sm rounded-3xl p-8 text-center transition-all duration-500 border border-white/20 hover:border-blue-200 hover:shadow-2xl">
+              <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-indigo-600 to-blue-600 rounded-2xl shadow-lg mb-4">
+                <i data-lucide="award" class="h-8 w-8 text-white"></i>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-3">ISO 27001 Compliant</h3>
+              <p class="text-base text-gray-700 leading-relaxed max-w-xl mx-auto">
+                International standard for information security management systems, ensuring robust data protection and risk management.
+              </p>
+            </div>
+          </div>
+
+          <!-- Badge 3: GDPR -->
+          <div class="flex-none w-full px-6">
+            <div class="bg-white/30 hover:bg-white/80 backdrop-blur-sm rounded-3xl p-8 text-center transition-all duration-500 border border-white/20 hover:border-blue-200 hover:shadow-2xl">
+              <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-2xl shadow-lg mb-4">
+                <i data-lucide="lock" class="h-8 w-8 text-white"></i>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-3">GDPR Ready</h3>
+              <p class="text-base text-gray-700 leading-relaxed max-w-xl mx-auto">
+                Full compliance with EU data protection regulations. Your data is processed lawfully, transparently, and securely.
+              </p>
+            </div>
+          </div>
+
+          <!-- Badge 4: Uptime SLA -->
+          <div class="flex-none w-full px-6">
+            <div class="bg-white/30 hover:bg-white/80 backdrop-blur-sm rounded-3xl p-8 text-center transition-all duration-500 border border-white/20 hover:border-blue-200 hover:shadow-2xl">
+              <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-indigo-600 to-blue-600 rounded-2xl shadow-lg mb-4">
+                <i data-lucide="zap" class="h-8 w-8 text-white"></i>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-3">99.9% Uptime SLA</h3>
+              <p class="text-base text-gray-700 leading-relaxed max-w-xl mx-auto">
+                Enterprise-grade infrastructure with guaranteed uptime, 24/7 monitoring, and rapid incident response.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Navigation Buttons - Hidden by default, show on hover -->
+      <button id="carouselPrev" class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-2 w-10 h-10 bg-white/80 backdrop-blur-md border-2 border-blue-200 rounded-full shadow-lg flex items-center justify-center hover:bg-blue-50 transition-all opacity-0 group-hover:opacity-100">
+        <i data-lucide="chevron-left" class="h-5 w-5 text-blue-600"></i>
+      </button>
+      <button id="carouselNext" class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-2 w-10 h-10 bg-white/80 backdrop-blur-md border-2 border-blue-200 rounded-full shadow-lg flex items-center justify-center hover:bg-blue-50 transition-all opacity-0 group-hover:opacity-100">
+        <i data-lucide="chevron-right" class="h-5 w-5 text-blue-600"></i>
+      </button>
+
+      <!-- Dot Indicators -->
+      <div class="flex justify-center gap-3 mt-8">
+        <button class="carousel-dot w-2.5 h-2.5 rounded-full bg-blue-600 transition-all hover:scale-125" data-index="0"></button>
+        <button class="carousel-dot w-2.5 h-2.5 rounded-full bg-gray-300 transition-all hover:scale-125" data-index="1"></button>
+        <button class="carousel-dot w-2.5 h-2.5 rounded-full bg-gray-300 transition-all hover:scale-125" data-index="2"></button>
+        <button class="carousel-dot w-2.5 h-2.5 rounded-full bg-gray-300 transition-all hover:scale-125" data-index="3"></button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FAQ Section - IMPROVED ACCORDION -->
+<section class="relative py-24 bg-gradient-to-br from-slate-50 to-blue-50">
+  <div class="max-w-4xl mx-auto px-6">
+
+    <div class="text-center mb-16 scroll-animate">
+      <div class="inline-flex items-center mb-6 glass-white px-6 py-3 text-sm font-semibold text-blue-700 rounded-full shadow-lg">
+        <i data-lucide="help-circle" class="h-5 w-5 mr-2"></i>
+        Frequently Asked Questions
+      </div>
+      <h2 class="text-4xl lg:text-5xl font-black text-gray-900 mb-6">
+        Got Questions? We've Got Answers
+      </h2>
+    </div>
+
+    <div class="space-y-4">
+
+      <!-- FAQ 1 -->
+      <div class="glass-white rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all scroll-animate">
+        <button class="faq-question w-full text-left p-8 flex items-center justify-between hover:bg-blue-50 transition-colors">
+          <h3 class="text-xl font-black text-gray-900 flex items-center gap-3">
+            <i data-lucide="chevron-right" class="h-6 w-6 text-blue-600 faq-icon"></i>
+            What is phishing email detection?
+          </h3>
+        </button>
+        <div class="faq-answer px-8">
+          <p class="text-gray-700 leading-relaxed ml-9">
+            Phishing email detection is the process of identifying fraudulent emails that attempt to steal sensitive information like passwords, credit card numbers, or personal data. Our AI-powered tool analyzes email headers, content, URLs, and sender authentication to detect phishing attempts before you click on dangerous links.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="glass-white rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all scroll-animate" style="animation-delay: 0.1s;">
+        <button class="faq-question w-full text-left p-8 flex items-center justify-between hover:bg-blue-50 transition-colors">
+          <h3 class="text-xl font-black text-gray-900 flex items-center gap-3">
+            <i data-lucide="chevron-right" class="h-6 w-6 text-blue-600 faq-icon"></i>
+            How accurate is this phishing email checker?
+          </h3>
+        </button>
+        <div class="faq-answer px-8">
+          <p class="text-gray-700 leading-relaxed ml-9">
+            Our AI-powered phishing detection tool uses advanced machine learning algorithms and analyzes multiple threat indicators including SPF/DKIM/DMARC authentication, URL reputation, domain age, content patterns, and suspicious language. While no tool is 100% accurate, our multi-layered approach provides reliable phishing detection with a proven 99.8% accuracy rate.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="glass-white rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all scroll-animate" style="animation-delay: 0.2s;">
+        <button class="faq-question w-full text-left p-8 flex items-center justify-between hover:bg-blue-50 transition-colors">
+          <h3 class="text-xl font-black text-gray-900 flex items-center gap-3">
+            <i data-lucide="chevron-right" class="h-6 w-6 text-blue-600 faq-icon"></i>
+            Is my email data safe when I upload it?
+          </h3>
+        </button>
+        <div class="faq-answer px-8">
+          <p class="text-gray-700 leading-relaxed ml-9">
+            Yes, your privacy is our top priority. All emails are transmitted via HTTPS encryption, analyzed in real-time, and immediately deleted after processing. We do not store, log, or share your email content. The analysis happens securely on our servers and your data is never retained.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ 4 -->
+      <div class="glass-white rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all scroll-animate" style="animation-delay: 0.3s;">
+        <button class="faq-question w-full text-left p-8 flex items-center justify-between hover:bg-blue-50 transition-colors">
+          <h3 class="text-xl font-black text-gray-900 flex items-center gap-3">
+            <i data-lucide="chevron-right" class="h-6 w-6 text-blue-600 faq-icon"></i>
+            What file formats are supported?
+          </h3>
+        </button>
+        <div class="faq-answer px-8">
+          <p class="text-gray-700 leading-relaxed ml-9">
+            Our phishing detector currently supports .eml (standard email format) files. You can export .eml files from most email clients including Gmail, Outlook, Yahoo Mail, and Apple Mail.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ 5 -->
+      <div class="glass-white rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all scroll-animate" style="animation-delay: 0.5s;">
+        <button class="faq-question w-full text-left p-8 flex items-center justify-between hover:bg-blue-50 transition-colors">
+          <h3 class="text-xl font-black text-gray-900 flex items-center gap-3">
+            <i data-lucide="chevron-right" class="h-6 w-6 text-blue-600 faq-icon"></i>
+            Is this tool free to use?
+          </h3>
+        </button>
+        <div class="faq-answer px-8">
+          <p class="text-gray-700 leading-relaxed ml-9">
+            Yes, our basic phishing email checker is completely free to use with no registration required. Simply upload your email file and get instant results. For advanced features like bulk scanning, API access, detailed reports, and scan history, we offer affordable Pro and Enterprise plans.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer Placeholder -->
+<div id="footer-placeholder"></div>
+
+<!-- Load Configuration First -->
+<script src="config.js"></script>
+
+<!-- Load Common Components -->
+<script src="loader.js"></script>
+
+<script>
+// Initialize Lucide icons
+$(document).ready(function() {
+  lucide.createIcons();
+
+  // Scroll Animation Observer - Optimized with throttling
+  const scrollElements = document.querySelectorAll('.scroll-animate');
+  let scrolling = false;
+
+  const elementInView = (el, dividend = 1) => {
+    const elementTop = el.getBoundingClientRect().top;
+    return (
+      elementTop <= (window.innerHeight || document.documentElement.clientHeight) / dividend
+    );
+  };
+
+  const displayScrollElement = (element) => {
+    element.classList.add('visible');
+  };
+
+  const handleScrollAnimation = () => {
+    scrollElements.forEach((el) => {
+      if (elementInView(el, 1.25)) {
+        displayScrollElement(el);
+      }
+    });
+    scrolling = false;
+  }
+
+  window.addEventListener('scroll', () => {
+    if (!scrolling) {
+      scrolling = true;
+      requestAnimationFrame(handleScrollAnimation);
+    }
+  }, { passive: true });
+
+  // Trigger on load
+  handleScrollAnimation();
+
+  // Trust Carousel
+  let currentSlide = 0;
+  const totalSlides = 4;
+
+  function updateCarousel() {
+    const carousel = $('#trustCarousel');
+    const offset = -currentSlide * 100;
+    carousel.css('transform', `translateX(${offset}%)`);
+
+    // Update dots
+    $('.carousel-dot').each(function(index) {
+      if (index === currentSlide) {
+        $(this).removeClass('bg-gray-300').addClass('bg-blue-600');
+      } else {
+        $(this).removeClass('bg-blue-600').addClass('bg-gray-300');
+      }
+    });
+
+    lucide.createIcons();
+  }
+
+  $('#carouselNext').on('click', function() {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    updateCarousel();
+  });
+
+  $('#carouselPrev').on('click', function() {
+    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+    updateCarousel();
+  });
+
+  $('.carousel-dot').on('click', function() {
+    currentSlide = parseInt($(this).data('index'));
+    updateCarousel();
+  });
+
+  // Auto-advance carousel every 5 seconds
+  setInterval(function() {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    updateCarousel();
+  }, 5000);
+
+  // FAQ Accordion - IMPROVED
+  $('.faq-question').on('click', function() {
+    const $answer = $(this).next('.faq-answer');
+    const $icon = $(this).find('.faq-icon');
+    const isActive = $answer.hasClass('active');
+
+    // Close other FAQs
+    $('.faq-answer').removeClass('active');
+    $('.faq-icon').removeClass('rotate-90');
+
+    // Toggle current FAQ
+    if (!isActive) {
+      $answer.addClass('active');
+      $icon.addClass('rotate-90');
+    }
+
+    lucide.createIcons();
+  });
+
+  // Dropzone functionality
+  const $dropzone = $('#dropzone');
+  const $fileInput = $('#fileInput');
+
+  $dropzone.on('click', function() {
+    $fileInput.trigger('click');
+  });
+
+  $dropzone.on('dragover', function(e) {
+    e.preventDefault();
+    $(this).addClass('dragover');
+  });
+
+  $dropzone.on('dragleave', function(e) {
+    e.preventDefault();
+    $(this).removeClass('dragover');
+  });
+
+  $dropzone.on('drop', function(e) {
+    e.preventDefault();
+    $(this).removeClass('dragover');
+    const files = e.originalEvent.dataTransfer.files;
+    if (files.length > 0) {
+      $fileInput[0].files = files;
+      $fileInput.trigger('change');
+    }
+  });
+
+  // Analyze button
+  $('#analyzeBtn').on('click', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    $fileInput.trigger('click');
+  });
+
+  // ORIGINAL JS UPLOAD CODE - WITH LOADING STATE
+  $('#fileInput').off('change').on('change', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    const file = this.files[0];
+    if (!file) {
+      return false;
+    }
+
+    // Validate file type
+    const fileExt = file.name.split('.').pop().toLowerCase();
+    if (fileExt !== 'eml') {
+      console.error('❌ Invalid file type:', fileExt);
+      showError('Please select a valid .eml file');
+      $(this).val('');
+      return false;
+    }
+
+    // Show loading modal with robot animation
+    $('#loadingModal').removeClass('hidden');
+
+    // Create FormData and upload
+    const formData = new FormData();
+    formData.append('file', file);
+
+    const apiUrl = CONFIG.getApiUrl('PARSE_SINGLE');
+
+    // Use jQuery AJAX for upload
+    $.ajax({
+      url: apiUrl,
+      type: 'POST',
+      data: formData,
+      processData: false,
+      contentType: false,
+      beforeSend: function() {
+        console.log('🚀 AJAX request starting...');
+        console.log('🚀 URL:', apiUrl);
+        console.log('🚀 File:', file.name, file.size);
+      },
+      success: function(result) {
+        console.log('✅ Upload successful! Result:', result);
+        console.log('✅ Result type:', typeof result);
+        console.log('✅ Result keys:', Object.keys(result || {}));
+
+        // Extract email_id from response
+        const emailId = result.email_id || result.id || file.name.replace(/\.[^/.]+$/, '');
+
+        // Redirect to results page
+        const resultsUrl = '/app/results/' + encodeURIComponent(emailId);
+        console.log('✅ Redirecting to:', resultsUrl);
+        window.location.href = resultsUrl;
+      },
+      error: function(xhr, status, error) {
+        console.error('💥 ==================== AJAX ERROR ====================');
+        console.error('💥 Status:', status);
+        console.error('💥 Error:', error);
+        console.error('💥 XHR Status Code:', xhr.status);
+        console.error('💥 XHR Status Text:', xhr.statusText);
+        console.error('💥 XHR Response:', xhr.responseText);
+        console.error('💥 ====================================================');
+
+        // Hide loading modal
+        $('#loadingModal').addClass('hidden');
+
+        showError('Upload failed: ' + status + ' - ' + (xhr.responseText || error));
+      },
+      complete: function(xhr, status) {
+      }
+    });
+
+    // Reset file input
+    $(this).val('');
+    return false;
+  });
+});
+
+// Show error
+function showError(message) {
+  $('#errorMessage').text(message).removeClass('hidden');
+  setTimeout(() => {
+    $('#errorMessage').addClass('hidden');
+  }, 5000);
+}
+</script>
+
+</body>
+</html>

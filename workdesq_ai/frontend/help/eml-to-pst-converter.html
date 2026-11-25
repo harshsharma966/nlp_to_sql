@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Gmail to Outlook: The Compliance Migration | WorkDesQ</title>
+    <meta name="description" content="When new compliance regulations forced a Gmail-based company to migrate to Outlook, they had to preserve 10 years of searchable email archives.">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #2563eb 0%, #4f46e5 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .story-card {
+            transition: all 0.3s ease;
+        }
+
+        .story-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(37, 99, 235, 0.2);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fadeInUp {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        .quote-mark {
+            font-family: Georgia, serif;
+            font-size: 4rem;
+            line-height: 0;
+            color: #2563eb;
+            opacity: 0.3;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-slate-50 to-blue-50">
+
+    <!-- Navigation -->
+    <nav class="bg-white/80 backdrop-blur-md border-b border-blue-100 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="/" class="flex items-center gap-2">
+                    <i data-lucide="arrow-left" class="h-5 w-5 text-blue-600"></i>
+                    <span class="font-bold text-gray-900">Back to Scanner</span>
+                </a>
+                <div class="flex items-center gap-4">
+                    <a href="/help" class="text-gray-600 hover:text-blue-600 font-medium">Help Center</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative py-20 overflow-hidden">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center animate-fadeInUp">
+                <div class="inline-flex items-center gap-2 bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                    <i data-lucide="shield" class="h-4 w-4"></i>
+                    Compliance Migration Story
+                </div>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight">
+                    <span class="text-gray-900">10 Years of Gmail Archives</span><br>
+                    <span class="gradient-text">Moving to Outlook</span>
+                </h1>
+                <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
+                    When RegTech Solutions landed a major government contract, compliance requirements forced them to abandon Gmail. But they couldn't lose a decade of searchable email history.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Story -->
+    <article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
+
+        <!-- Opening Scene -->
+        <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 mb-8 story-card">
+            <div class="prose prose-lg max-w-none">
+                <p class="text-xl text-gray-700 leading-relaxed mb-6">
+                    Rachel Thompson, Chief Compliance Officer at RegTech Solutions, read the contract clause three times. They'd just won their biggest contract ever—$18M over five years with a major government agency. But there was a requirement she hadn't anticipated.
+                </p>
+                <div class="bg-blue-50 border-l-4 border-blue-500 p-6 my-6">
+                    <p class="text-blue-900 font-semibold mb-2">Section 12.4 - Email Systems Compliance:</p>
+                    <p class="text-blue-800">"Contractor shall maintain all email communications on Microsoft 365 Government Cloud (GCC High) infrastructure. Third-party email platforms (including but not limited to Google Workspace) are prohibited for handling Controlled Unclassified Information (CUI)."</p>
+                </div>
+                <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                    RegTech had been on Google Workspace since day one. Ten years. 320 employees. Millions of emails. Their entire business ran on Gmail, Google Drive, Google Calendar.
+                </p>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    The contract was too valuable to pass up. But migrating from Gmail to Outlook wasn't just about switching platforms—they had critical requirements that made it exponentially harder.
+                </p>
+            </div>
+        </div>
+
+        <!-- The Requirements -->
+        <div class="mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                <i data-lucide="clipboard-check" class="h-8 w-8 text-blue-600"></i>
+                The Non-Negotiable Requirements
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-xl p-6 border-l-4 border-blue-600 story-card">
+                    <div class="flex items-start gap-4">
+                        <div class="bg-blue-100 p-3 rounded-lg">
+                            <i data-lucide="archive" class="h-6 w-6 text-blue-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-900 mb-2">Complete History Preservation</h3>
+                            <p class="text-gray-600">Every email from 2015-2025 must be searchable in Outlook. No data loss, no gaps in the archive.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl p-6 border-l-4 border-blue-600 story-card">
+                    <div class="flex items-start gap-4">
+                        <div class="bg-blue-100 p-3 rounded-lg">
+                            <i data-lucide="folder-tree" class="h-6 w-6 text-blue-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-900 mb-2">Folder Structure Intact</h3>
+                            <p class="text-gray-600">All Gmail labels must convert to Outlook folders without losing organization.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl p-6 border-l-4 border-blue-600 story-card">
+                    <div class="flex items-start gap-4">
+                        <div class="bg-blue-100 p-3 rounded-lg">
+                            <i data-lucide="calendar" class="h-6 w-6 text-blue-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-900 mb-2">Metadata Preservation</h3>
+                            <p class="text-gray-600">Original timestamps, sender/recipient info, and headers must remain accurate for audits.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl p-6 border-l-4 border-blue-600 story-card">
+                    <div class="flex items-start gap-4">
+                        <div class="bg-blue-100 p-3 rounded-lg">
+                            <i data-lucide="clock" class="h-6 w-6 text-blue-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-900 mb-2">90-Day Deadline</h3>
+                            <p class="text-gray-600">Migration must complete before contract start date—3 months away.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Challenge -->
+        <div class="bg-orange-50 border-2 border-orange-200 rounded-2xl p-8 mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+                <i data-lucide="alert-triangle" class="h-7 w-7 text-orange-600"></i>
+                The Gmail Export Problem
+            </h3>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Google Workspace exports email in <strong>MBOX format</strong>—a single massive file per user. Outlook can't directly import MBOX files. And their attempts to use Google's built-in migration tools hit walls:
+            </p>
+            <div class="space-y-3">
+                <div class="flex items-start gap-3 bg-white rounded-lg p-4">
+                    <i data-lucide="x" class="h-5 w-5 text-red-500 mt-1 flex-shrink-0"></i>
+                    <div>
+                        <div class="font-semibold text-gray-900">Google's Migration Tool</div>
+                        <div class="text-gray-600 text-sm">Only migrates recent emails, not full 10-year archives. Historical data would be lost.</div>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3 bg-white rounded-lg p-4">
+                    <i data-lucide="x" class="h-5 w-5 text-red-500 mt-1 flex-shrink-0"></i>
+                    <div>
+                        <div class="font-semibold text-gray-900">IMAP Migration</div>
+                        <div class="text-gray-600 text-sm">Takes weeks per user, frequently times out, loses folder structure.</div>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3 bg-white rounded-lg p-4">
+                    <i data-lucide="x" class="h-5 w-5 text-red-500 mt-1 flex-shrink-0"></i>
+                    <div>
+                        <div class="font-semibold text-gray-900">Third-Party Migration Services</div>
+                        <div class="text-gray-600 text-sm">Quoted $180,000+ and couldn't guarantee metadata preservation for compliance.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Stats -->
+        <div class="grid md:grid-cols-4 gap-4 mb-12">
+            <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 border-2 border-blue-200 text-center">
+                <div class="text-3xl font-black text-blue-700 mb-2">320</div>
+                <div class="text-gray-700 font-semibold text-sm">Employee Accounts</div>
+            </div>
+            <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-6 border-2 border-purple-200 text-center">
+                <div class="text-3xl font-black text-purple-700 mb-2">10</div>
+                <div class="text-gray-700 font-semibold text-sm">Years of Archives</div>
+            </div>
+            <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 border-2 border-green-200 text-center">
+                <div class="text-3xl font-black text-green-700 mb-2">3.2M</div>
+                <div class="text-gray-700 font-semibold text-sm">Total Emails</div>
+            </div>
+            <div class="bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl p-6 border-2 border-orange-200 text-center">
+                <div class="text-3xl font-black text-orange-700 mb-2">90</div>
+                <div class="text-gray-700 font-semibold text-sm">Days to Complete</div>
+            </div>
+        </div>
+
+        <!-- The Turning Point -->
+        <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl shadow-xl p-8 md:p-12 mb-8 border-2 border-blue-200">
+            <div class="flex items-start gap-4 mb-6">
+                <span class="quote-mark">"</span>
+                <div>
+                    <p class="text-xl text-gray-800 italic leading-relaxed mb-4">
+                        We needed to convert MBOX exports to PST format—Outlook's native archive format—while preserving everything: folder structure, timestamps, attachments, headers. And we needed to do it for 320 users in under 90 days.
+                    </p>
+                    <p class="text-gray-600 font-semibold">— Rachel Thompson, Chief Compliance Officer at RegTech Solutions</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Solution Strategy -->
+        <div class="mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                <i data-lucide="route" class="h-8 w-8 text-blue-600"></i>
+                The Three-Phase Migration Strategy
+            </h2>
+            <div class="bg-white rounded-xl p-8 shadow-lg">
+                <div class="space-y-6">
+                    <div class="flex items-start gap-4 pb-6 border-b border-gray-200">
+                        <div class="bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl flex-shrink-0">1</div>
+                        <div>
+                            <h3 class="font-bold text-gray-900 mb-2 text-lg">Export Phase</h3>
+                            <p class="text-gray-700">Use Google Takeout to export all 320 accounts to MBOX format. Create an intermediate EML extraction for maximum compatibility.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4 pb-6 border-b border-gray-200">
+                        <div class="bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl flex-shrink-0">2</div>
+                        <div>
+                            <h3 class="font-bold text-gray-900 mb-2 text-lg">Conversion Phase</h3>
+                            <p class="text-gray-700">Batch convert MBOX/EML archives to PST format with preserved folder structures and metadata for Outlook compatibility.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl flex-shrink-0">3</div>
+                        <div>
+                            <h3 class="font-bold text-gray-900 mb-2 text-lg">Import & Validation Phase</h3>
+                            <p class="text-gray-700">Import PST archives into Office 365 mailboxes, validate data integrity, and verify searchability for compliance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Tool -->
+        <div class="bg-gradient-to-br from-blue-600 to-indigo-600 rounded-2xl shadow-2xl p-8 md:p-12 mb-12 text-white">
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="flex-1">
+                    <div class="inline-block bg-white/20 backdrop-blur-sm px-4 py-2 rounded-lg text-sm font-semibold mb-4">
+                        THE MIGRATION SOLUTION
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-black mb-4">SysTools EML to PST Converter</h2>
+                    <p class="text-blue-100 text-lg leading-relaxed mb-6">
+                        The bridge from Gmail to Outlook. RegTech converted 3.2 million emails across 320 accounts in 67 days—with 100% metadata preservation and full compliance validation.
+                    </p>
+                    <div class="space-y-3 mb-8">
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="repeat" class="h-5 w-5"></i>
+                            <span>Convert MBOX and EML exports directly to Outlook PST format</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="users" class="h-5 w-5"></i>
+                            <span>Batch process hundreds of user accounts simultaneously</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="folder-tree" class="h-5 w-5"></i>
+                            <span>Maps Gmail labels to Outlook folders automatically</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="shield-check" class="h-5 w-5"></i>
+                            <span>Preserves all metadata, timestamps, and headers for compliance</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="file-check" class="h-5 w-5"></i>
+                            <span>Validation reports for audit trails and compliance verification</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="paperclip" class="h-5 w-5"></i>
+                            <span>Maintains attachments, embedded images, and email formatting</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="https://www.systoolsgroup.com/eml-to-pst-converter.html" target="_blank" class="inline-flex items-center justify-center gap-2 bg-white text-blue-600 px-8 py-4 rounded-lg font-bold hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl">
+                            Try Free Demo
+                            <i data-lucide="arrow-right" class="h-5 w-5"></i>
+                        </a>
+                        <a href="https://www.systoolsgroup.com/eml-to-pst-converter.html" target="_blank" class="inline-flex items-center justify-center gap-2 bg-white/10 backdrop-blur-sm text-white border-2 border-white px-8 py-4 rounded-lg font-bold hover:bg-white/20 transition-all">
+                            View Pricing
+                        </a>
+                    </div>
+                </div>
+                <div class="flex-shrink-0">
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border-2 border-white/20">
+                        <div class="text-center mb-4">
+                            <div class="text-5xl font-black mb-2">67</div>
+                            <div class="text-blue-200 font-semibold">Days Total</div>
+                        </div>
+                        <div class="border-t border-white/20 pt-4 mt-4 text-center">
+                            <div class="text-3xl font-bold mb-2">3.2M</div>
+                            <div class="text-blue-200 font-semibold">Emails Migrated</div>
+                        </div>
+                        <div class="border-t border-white/20 pt-4 mt-4 text-center">
+                            <div class="text-3xl font-bold mb-2">100%</div>
+                            <div class="text-blue-200 font-semibold">Compliance Pass</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Outcome -->
+        <div class="mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                <i data-lucide="trophy" class="h-8 w-8 text-green-600"></i>
+                The Result
+            </h2>
+            <div class="bg-white rounded-xl p-8 shadow-lg">
+                <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                    RegTech Solutions completed their migration 23 days ahead of schedule. All 320 employees had fully functional Office 365 accounts with complete email history. Government auditors verified 100% compliance with metadata preservation requirements.
+                </p>
+                <div class="bg-green-50 border-l-4 border-green-500 p-6 my-6">
+                    <p class="text-green-900 font-semibold mb-2">The compliance audit result:</p>
+                    <p class="text-green-800 italic">"Email archive migration verified complete. All CUI handling requirements met. Metadata preservation confirmed for full 10-year retention period. System approved for contract work."</p>
+                </div>
+                <div class="bg-blue-50 border-l-4 border-blue-500 p-6 my-6">
+                    <p class="text-blue-900 font-semibold mb-2">The unexpected bonus:</p>
+                    <p class="text-blue-800">Outlook's advanced search and archiving tools actually improved their email management. Employees could find old communications faster than ever before. The forced migration became a productivity upgrade.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-6 mt-8">
+                    <div class="text-center p-6 bg-green-50 rounded-lg">
+                        <div class="text-4xl font-black text-green-600 mb-2">$18M</div>
+                        <div class="text-gray-600 font-semibold">Contract Secured</div>
+                    </div>
+                    <div class="text-center p-6 bg-blue-50 rounded-lg">
+                        <div class="text-4xl font-black text-blue-600 mb-2">23</div>
+                        <div class="text-gray-600 font-semibold">Days Early</div>
+                    </div>
+                    <div class="text-center p-6 bg-purple-50 rounded-lg">
+                        <div class="text-4xl font-black text-purple-600 mb-2">$0</div>
+                        <div class="text-gray-600 font-semibold">Data Loss</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Common Scenarios -->
+        <div class="mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">When You Need EML to PST Conversion</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-xl p-6 border-l-4 border-blue-600 story-card">
+                    <h3 class="font-bold text-gray-900 mb-3 flex items-center gap-2">
+                        <i data-lucide="cloud" class="h-5 w-5 text-blue-600"></i>
+                        Gmail to Outlook Migration
+                    </h3>
+                    <p class="text-gray-600">Moving from Google Workspace to Microsoft 365 with full archive preservation</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 border-l-4 border-blue-600 story-card">
+                    <h3 class="font-bold text-gray-900 mb-3 flex items-center gap-2">
+                        <i data-lucide="shield" class="h-5 w-5 text-blue-600"></i>
+                        Compliance Requirements
+                    </h3>
+                    <p class="text-gray-600">Meeting regulatory mandates for specific email platforms or archive formats</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 border-l-4 border-blue-600 story-card">
+                    <h3 class="font-bold text-gray-900 mb-3 flex items-center gap-2">
+                        <i data-lucide="archive" class="h-5 w-5 text-blue-600"></i>
+                        Long-term Archiving
+                    </h3>
+                    <p class="text-gray-600">Converting email exports to PST for standardized, searchable archives</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 border-l-4 border-blue-600 story-card">
+                    <h3 class="font-bold text-gray-900 mb-3 flex items-center gap-2">
+                        <i data-lucide="building" class="h-5 w-5 text-blue-600"></i>
+                        Enterprise Transitions
+                    </h3>
+                    <p class="text-gray-600">Large-scale platform switches with hundreds or thousands of user accounts</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl p-8 md:p-12 text-center text-white shadow-2xl">
+            <h2 class="text-3xl md:text-4xl font-black mb-4">Planning a Gmail to Outlook Migration?</h2>
+            <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+                Don't risk data loss or compliance failures. Try SysTools EML to PST Converter free and ensure a perfect migration.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="https://www.systoolsgroup.com/eml-to-pst-converter.html" target="_blank" class="inline-flex items-center gap-2 bg-white text-blue-600 px-8 py-4 rounded-lg font-bold hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl">
+                    <i data-lucide="download" class="h-5 w-5"></i>
+                    Download Free Demo
+                </a>
+                <a href="/phishing_redesigned.html" class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm text-white border-2 border-white px-8 py-4 rounded-lg font-bold hover:bg-white/20 transition-all">
+                    <i data-lucide="shield" class="h-5 w-5"></i>
+                    Scan Your Emails
+                </a>
+            </div>
+        </div>
+
+    </article>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-bold text-lg mb-4">More Email Tools</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/help/msg-to-eml-converter.html" class="text-gray-400 hover:text-white transition-colors">MSG to EML Converter</a></li>
+                        <li><a href="/help/eml-converter.html" class="text-gray-400 hover:text-white transition-colors">EML Converter</a></li>
+                        <li><a href="/help/pst-converter.html" class="text-gray-400 hover:text-white transition-colors">PST Converter</a></li>
+                        <li><a href="/help/email-converter.html" class="text-gray-400 hover:text-white transition-colors">Email Converter</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Documentation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Video Tutorials</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">WorkDesQ</h3>
+                    <p class="text-gray-400 text-sm">
+                        Enterprise email security and conversion tools for modern businesses.
+                    </p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 text-sm">
+                &copy; 2025 WorkDesQ. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+
+</body>
+</html>
